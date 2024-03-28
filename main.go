@@ -1,5 +1,7 @@
 package main
 
+import "github.com/CameronHonis/go-scratch/reader"
+
 func main() {
-	Copy()
+	reader.TestBlockingReader()
 }
