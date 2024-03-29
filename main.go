@@ -1,9 +1,8 @@
 package main
 
-import (
-	"github.com/CameronHonis/go-scratch/errors"
-)
+import "github.com/CameronHonis/go-scratch/selects"
 
 func main() {
-	errors.TypeAssertOnCustomError()
+	//selects.BlockSelectCase()
+	selects.PreventRaceCondition()
 }
