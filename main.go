@@ -1,7 +1,9 @@
 package main
 
-import "github.com/CameronHonis/go-scratch/reader"
+import (
+	"github.com/CameronHonis/go-scratch/errors"
+)
 
 func main() {
-	reader.TestBlockingReader()
+	errors.TypeAssertOnCustomError()
 }
