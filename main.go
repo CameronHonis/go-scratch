@@ -1,9 +1,10 @@
 package main
 
-import "github.com/CameronHonis/go-scratch/scope"
+import "github.com/CameronHonis/go-scratch/cancel_context"
 
 func main() {
 	//selects.BlockSelectCase()
 	//selects.PreventRaceCondition()
-	scope.InnerFunctionScope()
+	//scope.InnerFunctionScope()
+	cancel_context.Main()
 }
