@@ -1,8 +1,9 @@
 package main
 
-import "github.com/CameronHonis/go-scratch/selects"
+import "github.com/CameronHonis/go-scratch/scope"
 
 func main() {
 	//selects.BlockSelectCase()
-	selects.PreventRaceCondition()
+	//selects.PreventRaceCondition()
+	scope.InnerFunctionScope()
 }
