@@ -6,7 +6,16 @@ import (
 	"time"
 )
 
-func Main() {
+func ReadErr() {
+	// Q: Is it possible to "peek" into a context status without a select statement?
+	ctx, cancel := context.WithCancel(context.Background())
+	fmt.Println(ctx.Err())
+	fmt.Println(ctx.Err() == nil)
+	cancel()
+	fmt.Println(ctx.Err())
+}
+
+func CancelBeforePassing() {
 	ctx, cancel := context.WithCancel(context.Background())
 	cancel()
 	time.Sleep(time.Second)

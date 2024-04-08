@@ -6,5 +6,6 @@ func main() {
 	//selects.BlockSelectCase()
 	//selects.PreventRaceCondition()
 	//scope.InnerFunctionScope()
-	cancel_context.Main()
+	cancel_context.ReadErr()
+
 }
